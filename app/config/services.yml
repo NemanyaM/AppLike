@@ -1,0 +1,8 @@
+parameters:
+    # ...
+    default.controller.class: HelloBundle\Controller\DefaultController
+
+services:
+    person.controller:
+        class: "%default.controller.class%"
+        arguments: ["@Mailer"]
